@@ -1,0 +1,5291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.js" integrity="sha512-L6yov5P1r9QnZX2ZRiq+XBLsm1GQ38zfSDJ6gy3pKmPCqkWvK2nz8Ojlju9q36+zOsMmMB+hYgGrJtJWo4Gy/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Customer Profile</title>
+  <link rel="shortcut icon" type="x-icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css" media="all">
+  <link rel="stylesheet" href="print.css" media="print">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.extendscript.js"
+    integrity="sha512-3Jm+Dj3Flsg52VpwKKGkdNMFC6o/m+3lVVqckmsdGQhWoymZvNlXyHHnAIdsHWmbTCobBG2bkL2LXsg5wvhHwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+  
+  
+</head>
+
+<body>
+  <div id="content">
+  <div class="menu-bar">
+
+    <a href="https://genefitletics.com/"><img src="logo.png" height="100" width="100"></a>
+    <h2>Genefitletics<small><sub>Your Unique Biology Decoded</sub></small></h2>
+    
+    
+
+
+    <ul>
+      <li class="active"><a href="#">Products</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li>
+              <a href="https://genefitletics.com/up-the-gut/">UP THE GUT</a>
+              <hr>
+              <a href="https://genefitletics.com/vageco/">VAGECO</a>
+              <hr>
+              <a href="https://genefitletics.com/lillbio/">Lill'Bio</a>
+              <hr>
+              <a href="https://genefitletics.com/up-the-gut-comprehensive/">UP THE GUT COMPREHENSIVE</a>
+              <hr>
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Community</a>
+        <div class="sub-menu-2">
+          <ul>
+            <li>
+              <a href="https://genefitletics.com/forum/">FORUM</a>
+              <hr>
+
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Learn</a>
+        <div class="sub-menu-3">
+          <ul>
+            <li>
+              <a href="https://genefitletics.com/blog/">BLOG</a>
+              <hr>
+              <a href="https://genefitletics.com/podcast/">PODCAST</a>
+              <hr>
+              <a href="https://genefitletics.com/webinar/">WEBINAR</a>
+              <hr>
+              <a href="https://genefitletics.com/product-category/fitness-book/">PUBLICATIONS</a>
+              <hr>
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <li><a href="https://genefitletics.com/edubiome/">Edubiome</a></li>
+      <li><a href="https://genefitletics.com/wp-login.php">Log In</a></li>
+      <li><a href="https://genefitletics.com/in-news/">In News</a></li>
+      <li><a href="#">Customer Support</a>
+        <div class="sub-menu-4">
+          <ul>
+            <li>
+              <a href="https://genefitletics.com/frequently-asked-questions/">FREQUENTLY ASKED QUESTIONS</a>
+              <hr>
+
+            </li>
+
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="https://genefitletics.com/wp-login.php?loggedout=true&wp_lang=en_US" target=_self
+          title="Logout of this Page">
+          <button class="button">
+            Logout  
+          </button>
+        </a>
+      </li>
+
+    </ul>
+
+    <div class="content">
+      <P></P>
+    </div>
+  </div>
+  <!-- <div class="pdfsection"> -->
+    
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+    </div>
+  
+  <button id="download-button">Print</button>
+  <div class="container">
+    <div class="item item-1">
+      Dear xyz,
+      <h4>
+        The information contained in this report is for nutritional advice only. The information is not intended to be
+        used by the customer for any diagnostic purpose and is not a substitute for professional medical advice.
+        You should always seek the advice of your physician or other healthcare providers with any questions
+        you may have regarding diagnosis, cure, treatment, mitigation of any disease or other medical condition
+        or impairment or the status of your health.
+      </h4>
+    </div>
+    <hr>
+  </div>
+
+</div>
+  <footer>Scores are based on Genefitletics’s proprietary algorithm- PROTEBA that includes analysing & interpreting 25 Individual molecular health
+    scores, 19 nutrient absorption scores & 10 full body scores covering both taxonomy & biological pathways scoring components
+  </footer>
+
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <h5>Background</h5>
+
+  <h6>
+    Current practice of general dietary recommendations are conflicting & highly subjective depending upon
+    source bias & does not take into account how each food impacts various biochemical activities taking
+    place inside the body. This results in the occurrence of multiple chronic health conditions, often
+    expressed by your body as symptoms indicating that something wrong is going inside the body.
+    We acknowledge the fact that our body does not have enzymes to digest 65% of the food we eat &
+    ultimately everything rests on 40 trillion microbes living in our gut to metabolize these foods & release
+    beneficial nutrients & compounds to help our body grow & thrive. These microbes living in our gut
+    perform critical functions such as digesting food, regulating essential hormones, boosting metabolism,
+    modulating satiety level, providing nutrients- vitamins, minerals & beneficial short chain fatty acids,
+    detoxifying enzymes, neutralizing pathogens & making neurotransmitters.
+    The generic dietary recommendations have led to mismatch between chemicals in the food we eat &
+    digestive enzymes released by our gut which has caused dysregulations of multiple biological functions
+    inside the body. This is the root cause of why we are experiencing multiple chronic health conditions
+    today.
+    <br>
+    <br>
+    <br>
+    <br>
+
+    There is strong epidemiological & molecular evidence that what we eat & how our microbes metabolize
+    the food we eat contributes significantly to onset & progression of various chronic diseases. Generic
+    dietary advice which has become the hallmark of various plain vanilla disease management & nutrition
+    companies is obscure & conflicting which has done more harm than good. Scientific Publications often
+    contradict one another with one suggesting health benefits while another propagating harmful impact foriii
+    the same food or diet. Consumption of dairy consumption has contradictory views with some studies
+    evidence supporting association with cancer & chronic diseases while others showing no correlation &
+    some showing significant health benefits. Similarly recent studies published contradictory views on the
+    effect of saturated fats on cardiovascular diseases. Red meat is said to provide essential nutrients such
+    as Vitamin B12 & dietary protein yet there is strong evidence in favor of a correlation between
+    consumption of these foods & increased incidence of inflammatory diseases & cancer. The fact is current
+    nutritional guidelines are influenced by the food industry which promotes increased consumption of sugar,
+    dairy & meat.
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    This large ecosystem of conflicting nutritional information has led to the creation of hundreds of diets,
+    each one claiming health benefits. This leaves consumers confused & frustrated with no confidence in
+    results & suggestions. Nutrition science finds itself in a predicament for a number of reasons.
+    <br>
+    <br>
+    <br>
+    <br>
+    This branch of science does not take into account the role of gut microbiome in personalizing diet in spite
+    of a number of evidence proving the fact that impact is significant. Besides, researchers make mistakes
+    when they categorize food as good & bad for everyone without understanding that the same food can
+    have different impacts on different people. Now it has been proved that our genetics plays a minor role &
+    our gut microbiome has a major role to play in our nutrition choices. Our gut microbiome not only impact
+    how food is digested but also converts molecular compounds in foods into beneficial or harmful
+    secondary metabolites that have larger impact on human physiological functions such as production of
+    neurotransmitters, release of inflammation (immune system activation & deactivation), immune tolerance
+    & carbohydrate metabolism.
+    Each food can be viewed as a container of molecular ingredients( micronutrients) rather than
+    macronutrients( homogeneous material) which is either good or bad for our health. Besides, metabolic
+    functions of each individual’s unique microbiome need to be identified & quantified in order to prescribe
+    specific foods that contain molecular, chemicals & substrates that will be converted into beneficial
+    secondary metabolites such as short chain fatty acids(SCFA) by an individuals’ unique microbiome.
+    Besides microbial functions also need to be quantified to ascertain which food should be avoided which
+    have molecular compounds that will be converted into harmful secondary metabolites such as
+    lipopolysaccharides(LPS) by an individual’s gut microbiome. These insights coupled with biological
+    testing of customers,expert knowledge, clinical studies & customer feedback powered by an intelligent
+    data analysis model can be then applied to each individual’s unique microbiome to recommend best
+    foods to be consumed & foods to be minimized & avoided.
+  </h6>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <h5>
+    Your gut microbial functional analysis
+  </h5>
+
+  <br>
+  <br>
+  <h8>
+    On analyzing your microbiome profile activities, functions & behavior, it was found that:
+  </h8>
+  <br>
+  <br>
+
+  <ol>
+    <li>Activity levels of butyrate producing bacteria is low & sub optimal which clearly reflects medium stress level &
+      food cravings
+    </li>
+    <br>
+    <li>Methane gas production is average as activity level of Archaea & methane producing bacteria is average. Follow
+      our recommendations to improve this score
+    </li>
+    <br>
+    <li> Sub optimal oxalate metabolism is attributed to low levels of oxalate neutralizing bacteria, core reason why
+      you have joint pains
+    </li>
+    <br>
+    <li>Activity level of ammonia production is medium & needs to be improved. The high level of activity is driving up
+      excess gas production.
+    </li>
+    <br>
+    <li> You have suboptimal stress response due to suboptimal Serotonin & GABA production & average magnesium
+      absorption. Please follow our food & probiotics recommendation to regulate these scores
+    </li>
+    <br>
+    <li> You have medium vitamin & mineral absorption rate due to low microbial beta & alpha diversity
+    </li>
+    <br>
+    <li>You have low energy efficiency due to low COQ10 production & average magnesium absorption.This is attributed to
+      low activity of microbes responsible for providing these essential nutrients.
+    </li>
+    <br>
+    <li> You have average Protein fermentation due to average ammonia & methane gas production. Please follow our
+      probiotics recommendations to suppress activities of methane & ammonia producing bacteria.
+    </li>
+  </ol>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <h5>
+    <center>Body Scores</center>
+  </h5>
+  <br>
+  <br>
+
+
+  <div class="accordion">
+    <div>
+      <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
+      <label for="section1" class="accordion__label" style="font-size:larger">Digital Footprint of your body</label>
+      <div class="accordion__content">
+        <p>
+
+        <label for="statusDropdown" class="tablefilter">Filter by Status:</label>
+        <select id="statusDropdown" class="tablefilter" onchange="filterTable()">
+            <option value="All">All</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Suboptimal">Suboptimal</option>
+        </select>
+        <table cellpadding="10" ;cellspacing="10" ; class="table table-bordered table-hover table-condensed" id="dataTable">
+          <thead>
+            <tr>
+                <th title="Field #1">Biological Pathway Scores</th>
+                <th title="Field #2">Microbial Activity Level</th>
+                <th title="Field #3">Score-2nd Level Status</th>
+                <th title="Field #4">Status</th>
+            </tr>
+        </thead>
+          <tbody>
+
+            <tr>
+              <td>Butyrate Production</td>
+              <td>LOW</td>
+              <td>7</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Methane Gas Production</td>
+              <td>MEDIUM</td>
+              <td>13</td>
+              <td>Average</td>
+            </tr>
+            <tr>
+              <td>H2S Production</td>
+              <td>LOW</td>
+              <td>10</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Bile Acid Metabolism</td>
+              <td>LOW</td>
+              <td>5</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Ammonia Gas Production</td>
+              <td>MEDIUM</td>
+              <td>13</td>
+              <td>Average</td>
+            </tr>
+            <tr>
+              <td>Oxalate Metabolism</td>
+              <td>LOW</td>
+              <td>2</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>TMA Production</td>
+              <td>LOW</td>
+              <td>12</td>
+              <td>Average</td>
+            </tr>
+            <tr>
+              <td>Uric Acid Production</td>
+              <td>MEDIUM</td>
+              <td>8</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Putrescine Production</td>
+              <td>LOW</td>
+              <td>10</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Salt Stress Pathways</td>
+              <td>LOW</td>
+              <td>4</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Candida Overgrowth</td>
+              <td>LOW</td>
+              <td>10</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Histamine Overproduction</td>
+              <td>MEDIUM</td>
+              <td>9</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Cholesterol Metabolism</td>
+              <td>LOW</td>
+              <td>5</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Cortisol Production</td>
+              <td>LOW</td>
+              <td>1</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Fight or Flight Response</td>
+              <td>LOW</td>
+              <td>9</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Thyroxine Production</td>
+              <td>LOW</td>
+              <td>1</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>LPS Production</td>
+              <td>LOW</td>
+              <td>9</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Diabetes Progression Score</td>
+              <td>LOW</td>
+              <td>1</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Intestinal Permeability</td>
+              <td>MEDIUM</td>
+              <td>29</td>
+              <td>Average</td>
+            </tr>
+            <tr>
+              <td>Cardiovascular Health</td>
+              <td>LOW</td>
+              <td>0</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Protein Fermentation</td>
+              <td>LOW</td>
+              <td>11</td>
+              <td>Average</td>
+            </tr>
+            <tr>
+              <td>Overall Gas Production </td>
+              <td>MEDIUM</td>
+              <td>12</td>
+              <td>Average</td>
+            </tr>
+            <tr>
+              <td>Antioxidant Production</td>
+              <td>LOW</td>
+              <td>2</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Serotonin Production</td>
+              <td>LOW</td>
+              <td>4</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Ghrelin Production</td>
+              <td>LOW</td>
+              <td>4</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>COQ10 Production</td>
+              <td>LOW</td>
+              <td>8</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>GABA Production</td>
+              <td>LOW</td>
+              <td>5</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Estrogen Production</td>
+              <td>LOW</td>
+              <td>10</td>
+              <td>Suboptimal</td>
+            </tr>
+          </tbody>
+        </table>
+        </p>
+      </div>
+    </div>
+    <div>
+      <input type="checkbox" name="example_accordion" id="section2" class="accordion__input">
+      <label for="section2" class="accordion__label" style="font-size:larger">Full Body Scores</label>
+      <div class="accordion__content">
+
+        <label for="statusDropdown2" class="tablefilter">Filter by Status:</label>
+        <select id="statusDropdown2" class="tablefilter" onchange="filterTable2()">
+            <option value="All">All</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Suboptimal">Suboptimal</option>
+        </select>
+        <table cellpadding="10" ;cellspacing="10" ; class="table2" id="dataTable2">
+          <thead>
+            <tr>
+              <th title="Field #1">Full Body Scores</th>
+              <th title="Field #2">Microbial Activity Level</th>
+              <th title="Field #3">Score</th>
+              <th title="Field #4">Status</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Brain &amp; Cognitive Health</td>
+              <td>LOW</td>
+              <td>6</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Heart&amp; Metabolic Health</td>
+              <td>LOW</td>
+              <td>1</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Skin Health</td>
+              <td>LOW</td>
+              <td>10</td>
+              <td>Suboptimal </td>
+            </tr>
+            <tr>
+              <td>Digestive Efficency</td>
+              <td>LOW</td>
+              <td>1</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Hormonal Health</td>
+              <td>LOW</td>
+              <td>3</td>
+              <td>Suboptimal </td>
+            </tr>
+            <tr>
+              <td>Immune System Health</td>
+              <td>LOW</td>
+              <td>36</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Inflammation Response</td>
+              <td>MEDIUM</td>
+              <td>30</td>
+              <td>Average</td>
+            </tr>
+            <tr>
+              <td>Stress Response</td>
+              <td>HIGH</td>
+              <td>9</td>
+              <td>Suboptimal</td>
+            </tr>
+            <tr>
+              <td>Energy Efficiency</td>
+              <td>LOW</td>
+              <td>10</td>
+              <td>Average</td>
+            </tr>
+            <tr>
+              <td>Gut Health</td>
+              <td>LOW</td>
+              <td>31</td>
+              <td>Suboptimal</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    <div>
+      <input type="checkbox" name="example_accordion" id="section3" class="accordion__input">
+      <label for="section3" class="accordion__label" style="font-size:larger;">Your Nutrition Absorption Score</label>
+      <div class="accordion__content">
+        <p></p>
+        <p>
+        <table cellpadding="10" ;cellspacing="10" ; class="table table-bordered table-hover table-condensed">
+          <tr>
+            <th>Nutrient Absorption Score</th>
+            <th>Microbial Activity Level</th>
+            <th>Abbrevation</th>
+            <th>Absorption Rate</th>
+          </tr>
+
+          <tr>
+            <td>Vitamin A</td>
+            <td>High</td>
+            <td>H</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Vitamin D</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin E</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin K</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B1</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B2</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B3</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B4</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B5</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B6</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B7</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B8</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B9</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B10</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B11</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin B12</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Vitamin C</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Iron </td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Magnesium</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Selenium</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Zinc</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Calicium</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Copper</td>
+            <td>Medium</td>
+            <td>M</td>
+            <td>0.5</td>
+          </tr>
+        </table>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+    <h5>
+      <center style="font-size: x-large;font-weight:700">Detailed Analysis</center>
+    </h5>
+    <div class="Detailed-content">
+      <p>The detailed analysis & dietary recommendations in this report is based on our proprietary method of
+        unique scoring model incorporating your current dietary choices, symptoms & current health conditions
+        provided by you in our scientifically designed phenotype assessment application & your gut microbiome
+        profiling & analysis of microbial activities & behavior conducted by us using your fecal sample as
+        provided by you through our microbiome sequencing technology.
+        This blended analysis helps us to decode what your gut microbes are doing inside your body
+        <br>
+        <br>
+        <br>
+
+        What your microbes do in the colon depends on:
+      </p>
+      <ul>
+        <li>What we give them (like food components, elements in drinks, etc.)</li>
+        <li>What we expose them to in the gut environment, like toxins, or substances of our digestive
+          system (bile acids, cholesterol, etc.).</li>
+      </ul>
+      <p>
+        <br>
+        To analyze this information and tell you what happens next, we identify and examine various functional
+        activity scores. These biological scores tell us biochemical events happening inside the body:</p>
+      <ul>
+        <li>
+          Which beneficial products might be made by your microbiome?
+        </li>
+        <li>
+          What are they releasing in your bloodstream?
+        </li>
+        <li>
+          Which microbial activities may be harmful to you?
+        </li>
+        <li>
+          What do the microbes reflect about your diet and your GI environment?
+        </li>
+      </ul>
+      <p>
+        <br>
+        We have done a comprehensive microbiome assessment to create 28 meaningful functional scores that
+        supports 10 full body scores for related wellness & diet recommendations. This Translational Science
+        effort is what allows the information gathered from 130 million data points to be “translated” into action
+        that can play a valuable role in your personal health journey.
+        <br>
+        <br>
+        <br>
+        The recommendations for food in this report is based on the above mentioned insights & microbial profile
+        & is unique for your body to address the dysregulations in your biological functions & overcome /minimize
+        instances of inflammation.
+      </p>
+      <br>
+      <br>
+      <p style="font-weight: 800;" ;>Each functional score has been rated as Sub-optimal, Average or Good based on
+        scores achieved
+        by incorporating data from phenotype form & gut microbiome profiling analysis. Each of these
+        ratings is categorized as:</p>
+
+    </div>
+    <div class="hscroll">
+
+      <table width="100%" border="1" cellspacing="0" cellpadding="6">
+        <tbody>
+          <tr>
+            <th>Rating</th>
+            <th>Parameters indicating</th>
+            <th>Parameters indicating anti-inflammatory activities</th>
+
+          </tr>
+          <tr>
+            <td>Sub Optimal</td>
+            <td>31-50</td>
+            <td>&lt;10</td>
+
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>11-30</td>
+            <td>11-30</td>
+
+          </tr>
+          <tr>
+            <td>Good</td>
+            <td>&lt;10</td>
+            <td>31-50</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+    <p class="after-table">
+      <br>
+      Cycle includes one sequencing plus 4/6 months membership plan for accessing health insights &
+      results.</p>
+      <div class="pdfcontainer page-break">
+        <div class="pdfheader">
+          <img src="logo2.png" alt="">
+          <img src="logo3.png" alt="">
+          <img src="logo1.png" alt="">
+        </div>
+        <hr>
+        <!-- content -->
+        
+      </div>
+    <h5 class="Heading">Your Unique Molecular insights.</h5>
+    <p class="molecular-content">
+      You may refer to your fully integrated whole body scores & biological pathway analysis to get detailed
+      insights on your biology. The recommendations for precision nutrition, supplements & biotics are carved
+      out considering gaps in your current biology. Please follow the recommendations diligently to bring your
+      body back in homeostasis position & improve your gut microbiome diversity.
+
+
+      <div class="pdfcontainer page-break">
+        <div class="pdfheader">
+          <img src="logo2.png" alt="">
+          <img src="logo3.png" alt="">
+          <img src="logo1.png" alt="">
+        </div>
+        <hr>
+        <!-- content -->
+        
+      </div>
+    <p class="Brain-heading">
+      <img src="brain.png" height="200px" ;width="1000px" ;>
+      Brain and Cognitive Health,&nbsp; &nbsp; Status: Sub Optimal
+    </p>
+    <p class="brain-content">
+      This score assesses how the interactions between your microbiome & the food you eat impact your brain
+      & cognitive health. Our molecular & biological functions analysis assesses your:
+    <ol>
+      <li>
+        GABA Production.
+      </li>
+      <li>
+        Serotonin Production
+      </li>
+      <li>
+        Nutrient absorption that impact your memory & focus
+      </li>
+      <li>
+        Activities that impact stress & your body’s pH balance.
+      </li>
+    </ol>
+    <p class="brain-content"> 
+      <br>
+      A status which is suboptimal means that your current dietary choices are not supporting
+      your
+      microbes to promote activities that improve your brain & mental health.Our nutrition & supplement
+      recommendations are focussed on improving this status.
+    </p>
+
+  </div>
+  <div class="graph-for-values" ;>
+
+
+
+    <canvas id="graph1"></canvas>
+
+<div id="legend">
+  <div class="legend-item">
+    <div class="legend-dot legend-suboptimal"></div>
+    <span> {1-10}
+      Sub-Optimal</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-dot legend-average"></div>
+    <span>{11-30}Average</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-dot legend-good"></div>
+    <span>{30-50}Good</span>
+  </div>
+</div>
+
+<script>
+  var ctx = document.getElementById('graph1').getContext('2d');
+
+  // values should be placed here 
+  var cycles = ['0', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+  var values = [null, 32, ];
+
+  // Determine status and color for each data point
+  var statuses = values.map((value, index) => {
+    if (index === 0) {
+      return { status: 'N/A', color: 'gray' };
+    } else if (value !== null && value >= 1 && value <= 10) {
+      return { status: 'Sub-Optimal', color: 'red' };
+    } else if (value !== null && value >= 11 && value <= 30) {
+      return { status: 'Average', color: 'orange' };
+    } else if (value !== null && value >= 31 && value <= 50) {
+      return { status: 'Good', color: 'green' };
+    } else {
+      return { status: '', color: 'gray' };
+    }
+  });
+
+  // Create the chart
+  var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: cycles,
+      datasets: [{
+        data: values,
+        pointBackgroundColor: statuses.map(status => status.color),
+        pointRadius: 12,
+        pointHoverRadius: 15,
+        borderWidth: 3,
+        fill: false,
+      }]
+    },
+    options: {
+      legend: {
+        display:false
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: false,
+            stepSize: 10
+          }
+    }]
+  },
+  tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+}
+});
+</script> 
+  </div>
+
+ <br>
+ <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content">To arrive at this integrated health score you see above, we combine multiple functional
+    activities
+    which covers GABA Production, Magnesium absorption, Serotonin production, Cortisol Production,
+    Vitamin B12, Vitamin B9 & Vitamin C absorption, Estrogen production & fight or flight response.
+    Each of these scores have specific level of impact on your brain & cognitive health.This is based on
+    scientific knowledge till date & data we derive from your sequencing & phenotype</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading"><img src="heart.png" height="100px" ;width="200px">Heart& Metabollic Health,&nbsp;   Status: Good</p>
+  <p class="brain-content">
+    This score assesses how the interactions between your microbiome & the food you eat impact your
+    cardiovascular & metabolic health. Our molecular & biological functions analysis assesses your:
+
+  <ol>
+    <li>
+      Activities that promote circulatory
+    </li>
+    <li>
+      Molecular signatures of metabolic diseases
+    </li>
+    <li>
+      Cholesterol & bile acid metabolism
+    </li>
+    <li>
+      How well your body is digesting proteins
+    </li>
+    <li>
+      Level of antioxidant production
+    </li>
+    <li>
+      Absorption of nutrients that promote cardiovascular health
+    </li>
+
+    
+  </ol>
+  <p class="brain-content">A status which is good means that your current dietary choices is promoting beneficial
+    activities for
+    improving heart optimizing your heart & metabolic health. Our nutrition & supplement recommendations
+    are focussed on maintaining this score.
+
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph2">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph2').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 12];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content">To arrive at this integrated health score you see above, we combine multiple functional
+    activities
+    which covers GABA Production, Magnesium absorption, Serotonin production, Cortisol Production,
+    Vitamin B12, Vitamin B9 & Vitamin C absorption, Estrogen production & fight or flight response.
+    Each of these scores have specific level of impact on your brain & cognitive health.This is based on
+    scientific knowledge till date & data we derive from your sequencing & phenotype</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading"><img src="skin.png" height="100px" ;width="200px">Skin Health,&nbsp;  Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses how the interactions between your microbiome & the food you eat impact your skin
+health. Our molecular & biological functions analysis assesses your:
+  <ol>
+    <li>
+      Skin pH Level
+    </li>
+    <li>
+      How well nutrients are supporting skin homeostasis.
+    </li>
+    <li>
+      How skin health is impacting your digestive efficiency
+    </li>
+    <li>
+      How well your body is digesting proteins
+    </li>
+    <li>
+    How your thyroid hormones & HPA Axis is impacting your skin health.
+    </li>  
+  </ol>
+  <p class="brain-content">A status which is suboptimal means that your current dietary choices are not supporting your
+    microbes to promote activities that improve your skin health.Our nutrition & supplement
+    recommendations are focussed on improving this status.
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph3">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span>{1-10}Sub-Optimal</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph3').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 10];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else {
+        status = '';
+      }
+
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content">To arrive at this integrated health score you see above, we evaluate functional activities of microbes
+    that directly impact skin pH level & combine multiple functional activities which covers LPS
+    production, Histamine Production, Butyrate production,Intestinal permeability & Vitamin C
+    absorption. Each of these scores have a specific level of impact on your Skin Health. This is based
+    on scientific knowledge till date & data we derive from your sequencing & phenotype</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading"><img src="digestive.png" height="100px" ;width="200px">Digestive Efficiency,&nbsp;  Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses how the interactions between your microbiome & the food you eat impact your
+digestive health.Our molecular & biological functions analysis assesses how well your body is digesting
+protein, carbs & fats.
+<br>
+
+A status which is suboptimal means that your current dietary choices are not supporting your
+microbes to improve your digestive efficiency & optimize nutrient absorption.Our nutrition &
+supplement recommendations are focussed on improving this status.
+</p>
+
+  
+ 
+  <div class="graph-for-values">
+    <canvas id="graph4">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{31-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph4').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 1];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content"> To arrive at this integrated health score you see above, we combine multiple functional activities
+    which covers Butyrate Production, Methane gas production, H2S production, Ammonia gas
+    production, Bile Acid Metabolism, Oxalate Metabolism, TMA Production, LPS production &
+    Putrescine Production.. Each of these scores have a specific level of impact on your Digestive
+    Efficiency. This is based on scientific knowledge till date & data we derive from your sequencing &
+    phenotype</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading"><img src="hormones.png" height="100px" ;width="200px">Hormonal Health ,&nbsp;  Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses how the interactions between your microbiome & the food you eat impact your
+hormone production.Our molecular & biological functions analysis assesses your:
+
+  <ol>
+    <li> 
+      Level of thyroid production
+    </li>
+    <li>
+      Level of hormones released by HPA Axis
+        </li>
+    <li>
+      Level of mood hormones
+    </li>
+  
+  </ol>
+  <p class="brain-content">A status which is suboptimal means that your current dietary choices are not supporting your
+    microbes to optimize your hormone levels which can dysregulate your digestive health, metabolic &
+    auto immune health.Our nutrition & supplement recommendations are focussed on improving this
+    status.
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph5">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span>{1-10}Sub-Optimal</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph5').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 3];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >=31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else {
+        status = '';
+      }
+
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content">To arrive at this integrated health score you see above, we combine multiple functional activities
+    which covers Serotonin Production, Thyroid Production, Cortisol Production, Estrogen Production &
+    Fight or Flight Response.Each of these scores have a specific level of impact on your Hormonal
+    Health. This is based on scientific knowledge till date & data we derive from your sequencing &
+    phenotype</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading"><img src="immune.png" height="100px" ;width="200px">Immune System,&nbsp;  Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses how the interactions between your microbiome & the food you eat impact your
+immune system health .Our molecular & biological functions analysis assesses your:
+</p>
+  <ol>
+    <li>
+      Immune system’s ability to manage & tackle oxidative stress
+    </li>
+    <li>
+      Preparedness to fight toxins & harmful bacteria & microbes
+    </li>
+    
+  </ol>
+  <p class="brain-content">A status which is good means that your current dietary choices are supporting your microbes to
+    improve your immune response to fight toxins & reactive oxidation species(ROS).Our nutrition &
+    supplement recommendations are focussed on improving this status.
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph6">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{31-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph6').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 36];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content">To arrive at this integrated health score you see above, we combine multiple functional activities
+    which covers Butyrate production, LPS Production, Antioxidant production, Uric Acid production,
+    Histamine production, Candida Overgrowth, Vitamin A, Vitamin C, Vitamin D, Vitamin E, Vitamin B9
+    & Zinc absorption .Each of these scores have a specific level of impact on your Immune System
+    Health. This is based on scientific knowledge till date & data we derive from your sequencing &
+    phenotype</p>
+    <br>
+
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading"><img src="inflammation.png" height="100px" ;width="200px">Inflammation Response,&nbsp;  Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score measures the activities of your microbes that can contribute to or reflect inflammation in your
+    gut environment. Inflammation in your gut can be caused by harmful things your microbes produce when
+    protein is inefficiently digested, there's excessive microbial gas production, or you simply have a gut
+    environment that your microbes perceive as threatening.
+    </p>
+  
+  <p class="brain-content">A status which is average means that your current dietary choices are not supporting your microbes
+    to suppress proinflammatory activities & support anti-inflammatory activities.Our nutrition &
+    supplement recommendations are focussed on improving this status.
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph7">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph7').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 30];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content"> To arrive at this integrated health score you see above, we combine multiple functional activities
+    which covers Butyrate production, methane gas production, H2S production, Ammonia gas
+    production, Uric Acid production, Bile Acid metabolism, Oxalate Metabolism, TMA Production, LPS
+    Production, Antioxidant production, Uric Acid production, Histamine production, Candida
+    Overgrowth, Salt Stress Pathways, Cholesterol Metabolism & Putrescine production .Each of these
+    scores have a specific level of impact on your Inflammation response. This is based on scientific
+    knowledge till date & data we derive from your sequencing & phenotype</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading"><img src="stress.png" height="100px" ;width="200px">Stress Response,&nbsp;  Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses how the interactions between your microbiome & the food you eat impact your
+stress response .Our molecular & biological functions analysis assesses your:
+</p>
+  <ol>
+    <li>
+      Stress levels
+    </li>
+    <li>
+      How nutrients are responding to high or low stress levels.
+    </li>
+    <li>
+      How stress levels are connected with metabolic, neurodegenerative, digestive health & skin
+issues.
+    </li>
+    
+  </ol>
+  <p class="brain-content">A status which is sub optimal means that your current dietary choices are not supporting your
+    microbes to improve your stress response.Our nutrition & supplement recommendations are
+    focussed on improving this status.
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph8">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{30-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph8').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 9];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content"> To arrive at this integrated health score you see above, we combine multiple functional activities
+    which covers Serotonin Production, Fight or Flight Response, Cortisol Production, Magnesium,
+    Vitamin B1,B3,B9,B12, Vitamin D,Zinc, Vitamin E, Iron & Calcium absorption .Each of these scores
+    have a specific level of impact on your stress response. This is based on scientific knowledge till
+    date & data we derive from your sequencing & phenotype</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading"><img src="energy.png" height="100px" ;width="200px">Energy Efficiency,&nbsp;  Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses how the interactions between your microbiome & the food you eat impact your
+energy efficiency .Our molecular & biological functions analysis assesses your:
+  <ol>
+    <li>
+      Mitochondrial health & ATP production
+    </li>
+    <li>
+      Nutrient deficiencies
+    </li>
+    <li>
+      How well your body is producing antioxidants.
+    </li>
+    
+  </ol>
+  <p class="brain-content">A status which is sub optimal means that your current dietary choices are not supporting your
+    microbes to improve your energy efficiency.Our nutrition & supplement recommendations are
+    focussed on improving this status.
+
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph9">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{31-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph9').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 10];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content">To arrive at this integrated health score you see above, we combine multiple functional activities
+    which covers Antioxidant Production, Fight or Flight Response, Cortisol Production, COQ10
+    production,Vitamin B6,B9,B12, Vitamin C,Copper, Iron & Magnesium absorption .Each of these
+    scores have a specific level of impact on your energy efficiency. This is based on scientific
+    knowledge till date & data we derive from your sequencing & phenotype</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading"><img src="gut.png" height="100px" ;width="200px">Gut Health,&nbsp; Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses how the interactions between your microbiome & the food you eat impact your gut
+    health .Our molecular & biological functions analysis assesses your:
+    </p>
+
+  <ol>
+    <li>
+      Microbial activities that are triggering inflammation.
+    </li>
+    <li>
+      Intestinal barrier health.
+    </li>
+   
+    
+  </ol>
+  <p class="brain-content">A status which is average means that your current dietary choices are not supporting your microbes
+    to improve your gut health.Our nutrition & supplement recommendations are focussed on improving
+    this status.
+
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph10">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph10').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 31];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <p class="how-we-calculate">How we Calculate this score :</p>
+  <p class="calculate-content">To arrive at this integrated health score you see above, we combine multiple functional activities
+    which covers Butyrate production, Methane gas production, H2S production,Ammonia Production,
+    Uric Acid Production,Bile Acid Metabolism, Oxalate Metabolism, LPS production, TMA production,
+    Candida Overgrowth, Histamine Production,Antioxidant Production,Salt Stress Pathways,
+    Cholesterol Metabolism,Putrescine Production,Ghrelin Production,Inflammatory activity, overall gas
+    production, Digestive Efficiency, Intestinal Permeability, Protein Fermentation, Estrogen Production,
+    Thyroxine Production, Cortisol Production & fight or flight response .Each of these scores have a
+    specific level of impact on your Gut health. This is based on scientific knowledge till date & data we
+    derive from your sequencing & phenotype</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading">Individual Molecuar Health Scores</p>
+  <p class="how-we-calculate">How we Calculate each of the below scores?</p>
+  <p class="calculate-content">Our high-resolution data allows us to see which metabolic and signaling pathways are activated
+    When you see the phrase, “Pathway Activity,” it’s referring to what is actively happening in your cells
+    or what your microbes are actively doing in your gut, that is, how molecules (metabolites) are being
+    processed to form others. To develop our scores we first build our own custom pathways, then define
+    the logic needed to score them based on the expressed genes that have known molecular roles.
+    Your unique levels of pathway activities help our understanding of your overall biology and give us
+    the ability to address your health-related functions with molecular-level precision.</p>
+    <br>
+    <div class="pdfcontainer page-break">
+      <div class="pdfheader">
+        <img src="logo2.png" alt="">
+        <img src="logo3.png" alt="">
+        <img src="logo1.png" alt="">
+      </div>
+      <hr>
+      <!-- content -->
+      
+    </div>
+  <p class="Brain-heading">Butyrate Production,&nbsp;  Status:Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses all biochemical activities that promote production of beneficial nutrients-
+    Butyrate. Butyrate is an essential short chain fatty acid released by some specific beneficial
+    
+    microbes in your gut when you feed them with high fiber foods. High butyrate production reflects
+    strong gut lining, improved insulin sensitivity, high satiety levels, hormonal balance, metabolism &
+    production of various neurotransmitters. A high level of activity & score is considered to be good.
+    </p>
+
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph11">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{30-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph11').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 7];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Serotonin Production,  &nbsp;Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses the activities of microbes that promote production of Serotonin in the
+    gut.Serotonin, also referred to as, mood hormones plays a key role in our mental health and helps us
+    with feelings of happiness and wellbeing.Serotonin works to regulate mood, sleep, appetite,
+    digestion, and social behavior, making it a strong link in depression studies.This brain hormone relies
+    heavily on a healthy gut with almost 95% of it produced from our gut bacteria. Boosting levels of
+    serotonin helps us with feelings of happiness and wellbeing. But this brain hormone relies heavily on
+    a healthy gut with almost 95% of it produced from our gut bacteria.Serotonin production is impacted
+    by the level of active Vitamin D in the body.</p>
+  
+  
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph12">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{30-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph12').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 4];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Thyroxine Production,&nbsp; Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses the levels of Thyroid Production & conversion of T4 to T3.Thyroid hormones
+play a key role in many functions which includes metabolism, our ability to absorb nutrients
+specifically Zinc, iron & Selenium, our ability to conceive, our sleep patterns, our energy levels,
+anxiety, mood & depression & digestive issues.Gastrointestinal symptoms of thyroid dysfunction are
+numerous, and include trouble swallowing, heartburn, indigestion, reduced acid production, nausea
+or vomiting, gallbladder complaints, abdominal discomfort, gas, bloating, diarrhea, constipation, and
+general digestive complaints including Irritable Bowel Syndrome (IBS). Thyroid dysregulation is also
+linked to disruption in Estrogen Production. Dysregulation in the thyroid impacts gut microbiome
+balance & vice versa & also triggers onset of Autoimmune disease- Hashimoto.</p>
+  
+  <p class="brain-content">
+    A low or high Thyroxine production indicates high level of pro-inflammatory patterns & focus should
+be average level of thyroxine production
+
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph13">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{11-30}Good</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span>{31-50}Sub-Optimal</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph13').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 1];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Good', color: 'Green' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Good';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Cortisol Production,&nbsp; Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses the levels of Cortisol Production & stress related disorders.Cortisol, also
+referred to as stress hormones plays a key role in our mental, digestive & metabolic health. The
+overproduction of this hormone can disrupt the gut-brain communication via the HPA axis & can
+even trigger autoimmune conditions. Average score & level of activity is considered to be good.
+</p>
+
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph14">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{11-30}Good</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span>{31-50}Sub-Optimal</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph14').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 1];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Good', color: 'green' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Good';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Fight or Flight Response ,&nbsp;  Status: Suboptimal</p>
+  <p class="brain-content">
+    Norepinephrine & epinephrine hormones are associated with fight or flight response. Although having a
+regulated level of these hormones is necessary to deal with emergency situations, their elevated levels &
+for a longer period of time can trigger stress, anxiety & depression.Together with adrenaline,
+norepinephrine increases heart rate and blood pumping from the heart. It also increases blood pressure
+and helps break down fat and increase blood sugar levels to provide more energy to the body.
+<br>
+In the brain, norepinephrine plays a role in the sleep-wake cycle, helping you to wake up, in increasing
+attention and focusing on performing a task ,and in memory storage. It is also important for emotions. On
+the flip side, low levels of fight or flight response can directly deprive our body of oxygen to carry out its
+functions, thereby directly influencing our heart & brain functions.An average score & activity level is
+considered good.
+  </p>
+  
+  <div class="graph-for-values">
+    <canvas id="graph15">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{11-30}Good</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span>{31-50}Sub-Optimal</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph15').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 9];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Good', color: 'green' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Good';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Methane Gas Production,&nbsp;  Status: Average</p>
+  <p class="brain-content">
+    This score assesses activities taking place inside the gut that results in release of methane gas in
+the gut. High methane production has been linked with some motility issues in the gut (how your
+food moves along the digestive tract), as well as pro-inflammatory patterns that can negatively affect
+your intestinal lining. A low score & activity level is considered to be good.
+
+  
+ 
+  <div class="graph-for-values">
+    <canvas id="graph16">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph16').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 13];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Hydrogen Sulphide,&nbsp; Status: Good</p>
+  <p class="brain-content">
+    This score assesses all activities of microbes living in the gut that lead to production of hydrogen
+sulfide gas in the gut. H2s can be made from some proteins that contain sulfur amino acids from
+ingested sulfate, sulphite molecules/preservatives found in dried fruits & frozen meat, alcoholic
+beverages , cruciferous vegetables & even saturated fats. When H2S activity is high ( colon pH level
+is Alkaline), it can lead to pro-inflammatory activity which can harm/weaken our gut lining & create
+situations of leaky gut. A high level of H2S can also lead to Chronic Diarrhea, fast gut transit time &
+even Ulcerative Colitis. A low score & activity level is considered to be good.
+</p>
+ 
+  <div class="graph-for-values">
+    <canvas id="graph17">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph17').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 10];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Ammonia Gas Production ,&nbsp;  Status: Average</p>
+  <p class="brain-content">
+    This score evaluates activity of microbes living in the gut that leads to production of ammonia. Ammonia
+can be made from amino acid as a byproduct of breakdown of protein or from ingested nitrate of nitrate
+molecules found in products such as preservative foods, additives, preserved meat & dried fruits. A low
+score is considered to be good.</p>
+
+    
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph18">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph18').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 13];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Uric Acid Production,&nbsp;  Status: Good</p>
+  <p class="brain-content">
+    This score assesses the level of activity of microbes in the gut that result in uric acid production. Uric
+acid is a byproduct that comes from consumption of purines which is generally found in beer, sugary
+soda, seafood, turkey, bacon,organ meat, saturated fats, high protein & high oxalate foods.
+Excessive Uric Acid Production can contribute to gout & impact our bone health & can even lead to
+Osteoporosis. A low score & activity level is considered to be good.
+</p>
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph19">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph19').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 8];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >=31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Bile Acid Metabolism,&nbsp;  Status: Good</p>
+  <p class="brain-content">
+    This score assesses the levels of activity of all metabolic pathways that include bile acids. Normally
+bile acids are made by the liver and secreted into the small intestine to help with fat digestion. Most
+are reabsorbed, but small levels of bile acids can enter the colon in the form of bile salts. Your gut
+microbiota can change them back into bile acids, after which they can even be recycled back to the
+liver. If this activity is relatively high or excessive, it may be an indicator of your inability to break
+down fat or absorb nutrients properly, which can contribute to a pro-inflammatory environment or
+negative liver-related effects, as microbiome's bile acid pathways have been implicated in fatty
+deposits in the liver. A low score & activity level is considered to be good.
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph20">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph20').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 5];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Oxalate Metabolism,&nbsp;  Status: Sub optimal</p>
+  <p class="brain-content">
+    This score assesses activities of all microbes living in the gut that results in detoxifying oxalate.High
+    level of circulating oxalate in the bloodstream results in kidney stones. Oxalate neutralizing microbes
+    can help you detoxify oxalate that you ingest from your food. A high score & activity level is
+    considered to be good.
+    </p>
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph21">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{31-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph21').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 2];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Cholestrol Metabolism,&nbsp;  Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses how well your gut microbiome can metabolize cholesterol. Naturally your body
+is capable of producing cholesterol. You also get cholesterol from dietary sources- most specifically
+through animal fat & protein. Excess Cholesterol in your body comes from imbalance between input
+& output. Output proceeds consist of bioconversion to bile acids in the liver & steroid hormones in
+diverse tissues.
+<br>
+However the most important way of throwing cholesterol out of the body is through cholesterol
+metabolism by the gut microbiome which is ultimately eliminated in the feces. This is generally
+achieved when you have specific microbes in your gut that facilitates bioconversion of cholesterol in
+the gut lumen & releases metabolite coprostanol. The high this conversion rate is, the better your
+cholesterol metabolism is.
+</p>
+  
+  <p class="brain-content">A high score & activity level is considered to be good & indicate that your body has optimum level of
+    circulatory cholesterol.
+
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph22">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{31-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph22').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 5];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">TMA Production,&nbsp;  Status: Average</p>
+  <p class="brain-content">
+    This score assesses all metabolic activity that results in production of Trimethylamine(TMA). TMA is
+a molecule that gets converted into Trimethylamine oxide (TMAO) in the liver. It is this TMAO that
+creates plaque in arteries & increases risk of cardiovascular diseases. The biggest sources for the
+release of TMA by our gut microbes are Choline & Cartenine. A low activity & low score is
+considered to be good.
+</p>
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph23">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph23').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 12];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">LPS Production,&nbsp;  Status: Good</p>
+  <p class="brain-content">
+    This score measures production of lipopolysaccharides(LPS) in the gut. LPS is a proinflammatory
+molecule that gut microbes make which can trigger an immune system response specifically if it
+passes to the bloodstream through gut lining.LPS is a fairly large molecule and should not be able to
+pass through the gut lining into the bloodstream to circulate the body if the intestinal barrier is strong.
+A strong mucosal layer and intestinal lining is helpful for mitigating the negative effects of producing
+too much LPS. Having a high Uric Acid or Oxalic acid metabolism, foods such as high in
+preservatives, protein & even Spinach can stimulate increased LPS production. A low score &
+activity level is considered to be good.
+</p>
+    
+ 
+  
+  <div class="graph-for-values">
+    <canvas id="graph24">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph24').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 9];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Putrescine Production,&nbsp;  Status: Good</p>
+  <p class="brain-content">
+    This score assesses the levels of activity of all microbial pathways that lead to putrescine production.
+Putrescine is a molecular byproduct of protein fermentation - a microbial breakdown of protein.If the
+activities of putrescine production pathways are too high, it can be harmful to the gut environment and
+the intestinal barrier lining. It is also one of the signs that you may be eating too much protein that
+may not be digested properly. A low score & activity level is considered to be good.
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph25">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph25').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 10];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Candida Overgrowth,&nbsp;  Status: Good</p>
+  <p class="brain-content">
+    This score assesses the level of candida overgrowth. Generally Candida Albicans, which is the most
+    pathogenic one, is found in 50% of the global population. Besides a rare Candida Strain- Candida
+    dubliniensis is found in only 2% to 3% of the total population. This strain is similar to Candida
+    Albicans but is less pathogenic. Candida is a nasty microbe & can take the form of both Fungi &
+    Yeast. Its overgrowth can suppress DAO enzymes, thereby leading to histamine intolerance. A low
+    score & activity level is considered to be good.
+    </p>
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph26">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph26').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 10];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31&& value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Histamine Overproduction, &nbsp;  Status: Good</p>
+  <p class="brain-content">
+    This score assesses the level of production of Histamine in relation to release of diamine oxidase (or
+DAO). If the release of DAO is slow to help lower histamine production, its levels can escalate and cause
+more severe symptoms that may even mimic food poisoning. Over time, this can lead to developing
+‘Histamine Intolerance,’ i.e. someone who isn’t fully equipped to overcome histamine production.A low
+score & activity level is considered to be good.</p>
+    
+  
+  <div class="graph-for-values">
+    <canvas id="graph27">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph27').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 9];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Protien Fermentation,&nbsp;  Status: Average</p>
+  <p class="brain-content">
+    This pathway indicates whether your body is digesting protein properly. The digestion of protein begins the
+moment you start chewing it & continues down to the stomach. If protein is not fully broken down in the
+process due to high protein content in your last meal, low stomach acid or if you are consuming too much
+protein, gut microbes will ferment the excess protein & release harmful byproducts. These byproducts can
+trigger inflammation & keep your immune system in a constant alert position. If the
+production of these harmful byproducts are not kept in check, it can make your immune system attack its
+own brother immune cells & trigger autoimmune conditions. A low activity level & low score is considered
+to be good.</p>
+ 
+  
+  <div class="graph-for-values">
+    <canvas id="graph28">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph28').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 11];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Intestinal Permeability,&nbsp;  Status: Average</p>
+  <p class="brain-content">
+    This score assesses strength of gut lining or intestinal barrier & mucosa layer that protects it. When
+    gut lining is compromised, things from the outside environment such as toxins, medications, harmful
+    bacteria & even food particles can enter the bloodstream from the gut & can negatively impact the
+    immune system. A low score & activity level is considered to be good & means that biochemical
+    activities are supporting strength of gut lining & there are very few harmful microbes present.
+    </p>
+   
+    
+  <div class="graph-for-values">
+    <canvas id="graph29">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph29').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 29];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Overall Gas Production,&nbsp;  Status: Average</p>
+  <p class="brain-content">
+    Overall gas production is associated with digestive difficulties, discomfort bloating, constipation &
+    inflammation. It consists of Ammonia, Methane & H2S gas production.A good score means that your
+    microbes are not actively engaged in gas production functions.
+    </p>
+  
+  <div class="graph-for-values">
+    <canvas id="graph30">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph30').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 12];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+          
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Antioxidant Production,&nbsp;  Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses the level of antioxidants digested & metabolized by the gut microbiome.
+Generally, our cells experience stress via Oxidative stress. Producing energy is a lot of work & as a
+result harmful byproducts - Free Radicals. This should not be an issue since our body is capable of
+producing & releasing antioxidants to cordon off oxidative stress. However, consuming a diet high in
+antioxidants does not mean that your body will get all the benefits. Only 5% to 10% of antioxidants
+are metabolized by the small intestine & it is the responsibility of our gut microbes to metabolize the
+rest of them. If you do not have specific microbes that can metabolize antioxidants into beneficial
+compounds,you will not be able to extract benefits. A high score & activity level is considered to be
+good.
+</p>
+
+  
+  
+  <div class="graph-for-values">
+    <canvas id="graph31">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{31-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph31').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 2];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Salt Stress Pathways,&nbsp;  Status: Good</p>
+  <p class="brain-content">
+    This score assesses excessive salt in the gut environment. This means that an individual needs to
+    adjust its salt/sodium intake & hydration levels. Too much salt for the gut microbiome makes the
+    environment of the gut microbiome less favorable for some beneficial microbes. A low score is
+    considered to be good & means that microbial salt stress is low.
+    </p> 
+    
+  
+  <div class="graph-for-values">
+    <canvas id="graph32">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph32').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [ ,32];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">GABA Production,&nbsp;  Status: Suboptimal</p>
+  <p class="brain-content">
+    This score assesses the levels of GABA production. Gamma-Aminobutyric acid is an important
+inhibitory neurotransmitter that helps stabilize mood by having anti-anxiety and anti-seizure
+characteristics. Disruption to GABA production has been associated with a number of mental health
+illnesses, like schizophrenia, bipolar disorder, and anxiety disorder. A high score is considered to be
+good.</p>
+  
+  <div class="graph-for-values">
+    <canvas id="graph33">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{31-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph33').getContext('2d');
+
+      // values should be placed here 
+      var cycles = [ ' ','Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [ ,32, , , ];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        } else {
+              return { status: '', color: '' }; // Add an empty status for the missing value
+
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+          
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">COQ10 production,&nbsp;   Status: Suboptimal</p>
+  <p class="brain-content">
+    This score assesses the levels of COQ 10 production. Coenzyme Q 10 (CoQ10) is a naturally
+occurring molecule that plays a key role in Electron Transport Chain pathway and ATP production in
+mitochondria. When CoQ10 is depleted energy production in cells is reduced leading to fatigue
+symptoms consistently reported in CoQ10-deficient populations.The essential nutrients enhancing
+energy production can be provided either as supplements or in a form of foods that contain specific
+ingredients that enhance cellular respiration pathways and mitochondrial health. A high score is
+considered to be good</p>
+  
+  <div class="graph-for-values">
+    <canvas id="graph34">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{31-50}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph34').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 8];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+
+          }
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Ghrelin production,&nbsp;  Status: Good</p>
+  <p class="brain-content">
+    This score assesses the level of your Ghrelin Secretion. Ghrelin, also known as Hunger hormone,
+impacts your food uptake & hunger level.This hormone is produced by enteroendocrine cells(EEC)
+of the gastrointestinal tract that influence appetite, digestion, intestinal absorption and motility .The
+release of GI peptides/digestive enzymes by EECs throughout the digestive tract is mediated in
+response to nutrient availability and ultimately serves to communicate metabolic and nutrient status
+to the central nervous system (Brain). The brain subsequently determines and directs appetite and
+decisions on food seeking, food intake and food choice to balance the body's energy needs. This
+dynamic two-way communication of the gut–brain axis determines ongoing eating behavior and
+impacts on overall energy homeostasis. Dysregulation in Ghrelin levels has been associated with fat
+storage, obesity & type-2 diabetes. A low score & activity level is considered to be good.
+    
+  <div class="graph-for-values">
+    <canvas id="graph35">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {31-50}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-average"></div>
+        <span>{11-30}Average</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{1-10}Good</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph35').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 4];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Average', color: 'orange' };
+        } else if (value >= 1 && value <= 10) {
+          return { status: 'Good', color: 'green' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {
+          legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 1 && value <= 10) {
+        status = 'Good';
+      } else {
+        status = '';
+      }
+      return 'Value: '+value  + ' | Status: '+status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+
+  </div>
+  <br>
+  <div class="pdfcontainer page-break">
+    <div class="pdfheader">
+      <img src="logo2.png" alt="">
+      <img src="logo3.png" alt="">
+      <img src="logo1.png" alt="">
+    </div>
+    <hr>
+    <!-- content -->
+    
+  </div>
+  <p class="Brain-heading">Estrogen Production,Status: Sub Optimal</p>
+  <p class="brain-content">
+    This score assesses the levels of Estrogen Production. Normally Estrogen is a hormone that regulates
+our metabolic activities & influences vulnerability to weight gain & obesity as well as risk of developing
+cancer( Breast, Endometrial, Cervical, and Ovarian Cancer In females & Prostate in males). The
+production of this hormone is driven by Beta-Glucuronidase activity. Beta-Glucuronidase is an enzyme
+that plays a pivotal role in digestion, particularly in breaking down certain things such as complex
+carbohydrates, detoxification of estrogen, thyroid hormone and other environmental toxins.The
+production of this enzyme depends upon the activity & abundance of level of a group of microbes called
+Estrobolome. Disruption in the level of Beta-Glucuronidase enzyme can cause development of a
+pro-inflammatory environment & Estrogen related pathologies.
+<br>
+This disruption is linked to development of PCOS, obesity, type 2 diabetes( low estrogen levels, Breast,
+Endometrial, Cervical, and Ovarian Cancer (In females) & Prostate cancer (in male)( excess estrogen
+levels). An average score is good, which means these pathway activity levels are regulated in your
+sample.</p>
+   
+  <p class="brain-content">Low activity level & score that needs improvement means that your current dietary choices are
+    dysregulating activities of the Estrobolome group of microbes. Please follow our nutrition & supplement
+    recommendations to optimize activity level of estrogen stimulating microbes from low to average.
+
+  </p>
+  <div class="graph-for-values">
+    <canvas id="graph36">Values for</canvas>
+
+    <div id="legend">
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span> {1-10}Sub-Optimal</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-good"></div>
+        <span>{11-30}Good</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot legend-suboptimal"></div>
+        <span>{31-50}Sub-Optimal</span>
+      </div>
+    </div>
+
+
+
+    <script>
+      var ctx = document.getElementById('graph36').getContext('2d');
+
+      // values should be placed here 
+      var cycles = ['o', 'Cycle-1', 'Cycle-2', 'Cycle-3', 'Cycle-4'];
+      var values = [, 10];
+
+      // Determine status and color for each data point
+      var statuses = values.map(value => {
+        if (value >= 1 && value <= 10) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        } else if (value >= 11 && value <= 30) {
+          return { status: 'Good', color: 'greem' };
+        } else if (value >= 31 && value <= 50) {
+          return { status: 'Sub-Optimal', color: 'red' };
+        }
+      });
+
+      // Create the chart
+      var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: cycles,
+          datasets: [{
+            data: values,
+            pointBackgroundColor: statuses.map(status => status.color),
+            pointRadius: 12,
+            pointHoverRadius: 15,
+            borderWidth: 3,
+            fill: false
+          }]
+        },
+        options: {legend: {
+        display:false
+      },
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false,
+                stepSize: 10
+              }
+            }]
+          },
+          tooltips: {
+  callbacks: {
+    label: function (tooltipItem, data) {
+      var index = tooltipItem.index;
+      var datasetIndex = tooltipItem.datasetIndex;
+      var value = data.datasets[datasetIndex].data[index];
+      var status;
+
+      if (value >= 1 && value <= 10) {
+        status = 'Sub-Optimal';
+      } else if (value >= 11 && value <= 30) {
+        status = 'Average';
+      } else if (value >= 31 && value <= 50) {
+        status = 'Sub-Optimal';
+      } else {
+        status = '';
+      }
+
+      return 'Status: ' + status;
+    }
+  }
+}
+
+        }
+      });
+    </script>
+    <br>
+    <button id="download-button"> download pdf</button>
+  </div>
+
+  <script>
+    const printbtn = document.getElementById('download-button');
+
+    printbtn.addEventListener('click',function(){
+      print();
+    })
+  </script>
+
+  <!-- dropdown script -->
+  <script>
+    function filterTable() {
+        var statusDropdown = document.getElementById("statusDropdown");
+        var selectedStatus = statusDropdown.value;
+        
+        var table = document.getElementById("dataTable");
+        var rows = table.getElementsByTagName("tr");
+
+        for (var i = 1; i < rows.length; i++) {
+            var statusCell = rows[i].cells[3]; 
+            if (statusCell) {
+                var status = statusCell.textContent.trim();
+                rows[i].style.display = selectedStatus === "All" || selectedStatus === status ? "" : "none";
+            }
+        }
+    }
+</script>
+<script>
+  function filterTable2() {
+      var statusDropdown = document.getElementById("statusDropdown2");
+      var selectedStatus = statusDropdown.value;
+      
+      var table = document.getElementById("dataTable2");
+      var rows = table.getElementsByTagName("tr");
+
+      for (var i = 1; i < rows.length; i++) {
+          var statusCell = rows[i].cells[3]; 
+          if (statusCell) {
+              var status = statusCell.textContent.trim();
+              rows[i].style.display = selectedStatus === "All" || selectedStatus === status ? "" : "none";
+          }
+      }
+  }
+</script>
+
+</body>
+
+
+</html>

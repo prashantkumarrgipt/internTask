@@ -1,0 +1,59 @@
+  @media print {
+    body{
+      font-size: 9pt;
+      /* margin-bottom:1cm ; */
+    }
+    @page { 
+      margin-top: 1cm; 
+      margin-bottom: 2cm; 
+    }
+    footer{
+      bottom: 0;
+      /* padding-top: 2cm; */
+      margin-bottom: -2.78cm;
+      display: block;
+      position: fixed;
+      bottom: 0; 
+      left: 0; 
+      right: 0; 
+      /* height: 50px;  */
+    }
+    .pdfheader{
+      /* position: fixed; */
+      display: block;
+      top: 0;
+      margin-top:0px ;
+      display: flex;
+      justify-content: space-evenly;
+      
+    }
+    .menu-bar ,#download-button , .tablefilter {
+      display: none;
+    }
+    .accordion__content {
+      display: block;
+    }
+    .accordion__label{
+      text-align: center;
+      text-transform: capitalize;
+      font-size: x-large;
+      font-weight: 900;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

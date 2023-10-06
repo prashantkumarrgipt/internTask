@@ -1,0 +1,1377 @@
+body{
+  font-family: 'Montserrat';   
+  font-size: 14px;
+   
+}
+:root{
+    --clr-dark: white;
+    --clr-light: black;
+    --clr-accent: #DFFAFE;
+
+}
+.menu-bar{
+    height:5%;
+    width:10%;
+    padding-top:fit-content;
+}
+.tagline{
+  display:inline;
+  margin-top:10%;
+}
+.menu-bar sub{
+ display:flex;
+ width:auto;
+ font-size: x-small;
+}
+.logo{
+    color:aqua;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer; 
+
+}
+.menu-bar{
+    background:white;
+    display:flex;
+    text-align: left;
+    font-size:large;
+    font-weight: 700px;
+}
+    
+.menu-bar ul{ 
+    display:flex;
+    list-style: none;
+    color: BLACK;
+
+}
+.menu-bar ul li{
+    width: 100px;
+    margin:4px;
+    padding: 5px;
+    
+}
+.menu-bar ul li a{
+    text-decoration:none;
+    color:black;
+}
+.sub-menu-1 ul{
+  display:flex;
+    list-style: none;
+    color: BLACK;
+
+}
+.sub-menu-1 ul li{
+  width: 120px;
+  margin-left: -10%;
+ text-align: justify;
+ border-color: black;
+ 
+ border-right: 30%;
+  
+}
+
+h1{ float: inline-start;
+     margin-left: 5%;
+    
+}
+
+h2{
+    background-color:rgb(255, 255, 255);
+    font-style: normal;
+    font-size: x-large;
+    border-radius: 15px;
+    margin-left: 1%;
+    margin-right:6%;
+}
+.container{
+     width: 80%;
+     height: 175px;
+     /* margin: 0 auto; */
+     border: 10px solid var(--clr-dark);
+}
+.item{
+     width: 150px;
+     height:175px;
+     background-color: #DFFAFE;
+     padding: 1em;
+     font-weight: 700;
+     color: var(--clr-light);
+     text-align: center;
+     border: 10px solid var(--clr-accent);
+     border-radius:10px;
+    }
+ .container{
+        display: flex;
+        justify-content:space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        /* gap: 1em; */
+        margin:auto;
+        width: auto;
+
+ }
+ .item-1{
+    /* width: 1200px; */
+    height: 150px;
+    flex-grow:1;
+    flex-shrink:0;
+
+ }
+ .item-2{
+    flex-grow:1;
+    flex-shrink:0;
+ }
+h5{ text-align: center;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: 900;
+    /* page-break-before: always; */
+    
+}
+h6{
+    font-size: larger;
+    font-weight: 500;
+    margin-left:3%;
+  
+}
+
+
+h4{ font-size: larger;
+    font-weight: 400;
+    /* margin-left:3%; */
+
+   
+}
+h7{
+  
+    font-weight: 900;
+    font-size:xx-large;
+    margin-left:30%;
+  
+}
+    
+
+h8{
+    font-size: larger;
+  
+    font-weight: 500;
+    margin-left:3%;
+    
+}
+ol{
+    font-size: larger;
+
+    font-weight: 500;
+    padding-left: 8%;
+    
+}
+h9{
+    font-size:x-large;
+    font-weight: 1000;
+    margin-left:3%;
+
+}
+
+
+.accordion {
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+  
+    background: #DFFAFE;
+    margin-left: 2%;
+  }
+  
+  .accordion__label,
+  .accordion__content {
+    padding: 14px 20px;
+  }
+  
+  .accordion__label {
+    display: block;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+  }
+  
+  .accordion__label:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+  }
+  
+  .accordion__content {
+    background: #ffffff;
+    line-height: 1fff.6;
+    font-size: 0.85em;
+    display:none;
+    
+  }
+  
+  .accordion__input {
+    display: none;
+  }
+  
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+  }
+  
+  .accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+  }
+h11{
+    font-size:x-large;
+  }
+  .sub-menu-1{
+    display:none;
+
+  }
+  .sub-menu-2{
+    display:none;
+
+  }
+  .sub-menu-3{
+    display:none;
+
+  }
+  .sub-menu-4{
+    display:none;
+
+  }
+  .active, .menu-bar ul li:hover{
+     color:#DFFAFE;
+     transition: .6s;
+  }
+  .menu-bar ul li:hover .sub-menu-1
+  {
+     display: block;
+     position: absolute;
+     background: white;
+     margin-top: 15px;
+     margin-left:-15px;
+     border-radius:5%
+     
+     
+
+  }
+  .menu-bar ul li:hover .sub-menu-1 ul{
+     display: block;
+     margin: 10px;
+     
+  }
+  .menu-bar ul li:hover .sub-menu-1 ul li{
+
+    width: 120px;
+    padding: 10px;
+    background: transparent;
+    border-radius:0;
+    text-align:left;
+
+  }
+  .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+
+  }
+  .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+  {
+    color:#DFFAFE;
+
+  }
+  .menu-bar ul li:hover .sub-menu-2
+  {
+     display: block;
+     position: absolute;
+     background: white;
+     margin-top: 15px;
+     margin-left:-15px;
+     border-radius:5%
+     
+     
+
+  }
+  .menu-bar ul li:hover .sub-menu-2 ul{
+     display: block;
+     margin: 10px;
+     
+  }
+  .menu-bar ul li:hover .sub-menu-2 ul li{
+
+    width: 120px;
+    padding: 10px;
+    background: transparent;
+    border-radius:0;
+    text-align:left;
+
+  }
+  .menu-bar ul li:hover .sub-menu-2 ul li:last-child{
+    border-bottom: none;
+
+  }
+  .menu-bar ul li:hover .sub-menu-2 ul li a:hover
+  {
+    color: #DFFAFE;
+
+  }
+  .menu-bar ul li:hover .sub-menu-3
+  {
+     display: block;
+     position: absolute;
+     background: white;
+     margin-top: 15px;
+     margin-left:-15px;
+     border-radius:5%
+     
+     
+
+  }
+  .menu-bar ul li:hover .sub-menu-3 ul{
+     display: block;
+     margin: 10px;
+     
+  }
+  .menu-bar ul li:hover .sub-menu-3 ul li{
+
+    width: 120px;
+    padding: 10px;
+    background: transparent;
+    border-radius:0;
+    text-align:left;
+
+  }
+  .menu-bar ul li:hover .sub-menu-3 ul li:last-child{
+    border-bottom: none;
+
+  }
+  .menu-bar ul li:hover .sub-menu-3 ul li a:hover
+  {
+    color:#DFFAFE;
+
+  }
+  .menu-bar ul li:hover .sub-menu-4
+  {
+     display: block;
+     position: absolute;
+     background: white;
+     margin-top: 15px;
+     margin-left:-15px;
+     border-radius:5%
+     
+     
+
+  }
+  .menu-bar ul li:hover .sub-menu-4 ul{
+     display: block;
+     margin: 10px;
+     
+  }
+  .menu-bar ul li:hover .sub-menu-4 ul li{
+
+    width: 120px;
+    padding: 10px;
+    background: transparent;
+    border-radius:0;
+    text-align:left;
+
+  }
+  .menu-bar ul li:hover .sub-menu-4 ul li:last-child{
+    border-bottom: none;
+
+  }
+  .menu-bar ul li:hover .sub-menu-4 ul li a:hover
+  {
+    color: #DFFAFE;
+
+  }
+  .subtext{
+    margin:5%;
+    text-align: center;
+  }
+
+  .tablefilter{
+    font-size:large;
+  }
+  .table{
+    font-size:large;
+    text-align: center;
+    table-layout:initial;
+    margin: auto;
+
+  }
+  .table2   {
+    font-size:large;
+    text-align: center;
+    table-layout:initial;
+    margin:auto;
+
+  }
+  .button{
+    background-color:#DFFAFE;
+    margin-top:-15%;
+    border-radius:5px;
+    object-position: -5%;
+  }
+  .Detailed-content{
+    font-size: larger;
+    margin-left: 5%;
+    
+  }
+  .hscroll {
+    overflow-x: auto; /* Horizontal */
+    /* margin-left:  15%;
+    margin-right:30%; */
+    margin: auto 15% auto 15%;
+    text-align: center;
+    page-break-before: always;
+  }
+  .after-table{
+    font-size:larger;
+    font-weight:500;
+    margin-left: 5%;
+
+
+  }
+
+  #graph1{
+    width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+  }
+
+  #legend {
+    display: none;
+    /* display:inline-flex; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .legend-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .legend-suboptimal {
+    background-color: red;
+  }
+
+  .legend-average {
+    background-color: orange;
+  }
+
+  .legend-good {
+    background-color: green;
+  }
+  .graph-for-values{
+    height:400px;
+    width:650px;
+    /* margin-top: 44px;
+    margin-left:25%; */
+    margin: 40px auto 10px auto;
+    font-weight:bold;
+    font-size:large;
+
+  }
+  .Heading{
+
+    text-align:center;
+    font-weight: 600;
+    font-size:x-large;
+
+  }
+  .molecular-content{
+    margin-left:3%;
+    font-size: large;
+    
+
+
+  }
+  .Brain-heading{
+    /* page-break-before: always; */
+    display: flex;
+    font-weight:600;
+    font-size:x-large;
+    margin-left:3%;
+    align-items:center;
+    justify-content:center;
+    
+    
+  }
+ .brain-content{
+  margin-top: 2%;
+   margin-left:3%;
+   font-size:larger;
+
+ }
+ .how-we-calculate{
+   font-size:larger;
+   margin-left: 5%;
+   font-weight:700
+ }
+ .calculate-content{
+   margin-left:3%;
+   font-size:larger;
+ }
+ #graph2{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values2{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph3{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values3{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph4{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values4{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph5{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values5{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph6{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values6{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph7{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values7{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph8{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values8{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph9{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values9{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph10{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values10{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph11{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values11{
+  height:400px;
+  width:650px;
+  margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph12{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values12{
+  height:400px;
+    width:650px;
+    margin-top: 44px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph13{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values13{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph14{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values14{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph15{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values15{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph16{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values16{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph17{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values17{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph18{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values18{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph19{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values19{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph20{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values20{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph21{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values21{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph22{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values22{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph23{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values23{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph24{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values24{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph25{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values25{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph26{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values26{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph27{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values27{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph28{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values28{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph29{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values29{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph30{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+  }
+   .graph-for-values30{
+    height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+
+ #graph31{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values31{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ } #graph32{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values32{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph33{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values33{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph34{
+  width: 400px;
+  height: 800px;
+  border: 10px solid #ccc;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45% ;
+
+  margin-bottom:20px;
+  padding: 24px 24px;
+  border-style:groove;
+  border-radius: 8%;
+}
+ .graph-for-values34{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ #graph35{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values35{
+  height:400px;
+    width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+ 
+ #graph36{
+  width: 400px;
+    height: 800px;
+    border: 10px solid #ccc;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45% ;
+
+    margin-bottom:20px;
+    padding: 24px 24px;
+    border-style:groove;
+    border-radius: 8%;
+}
+ .graph-for-values36{
+  height:400px;
+  width:650px;
+    margin-left:25%;
+    font-weight:bold;
+    font-size:large;
+   
+ }
+
+ 
+ 
+.predglym_p{
+  font-size: larger;
+}
+
+.pdfcontainer{
+  display: block;
+  width: 100%;
+}
+.pdfheader{
+  page-break-before: always;
+  display: none;
+  top:0;
+  text-align: center;
+
+}
+.pdfheader img{
+  
+  height: 100px;
+  width: 100px;
+}
+
+footer { 
+  /* bottom: 0px; */
+  display: none;
+  text-align: center;
+  /* padding: 10px; */
+  font-size: 6pt;
+  font-style: italic;
+}
+
+/* Download button */
+#download-button {
+  background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    display: flex;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+
+#download-button:hover {
+  background-color: #0056b3;
+}
